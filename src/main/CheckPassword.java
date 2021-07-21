@@ -10,6 +10,9 @@ public class CheckPassword {
               && (password.length() <= 15))) {
             return false;
         }
+        if (password.contains(" ")) {
+            return false;
+        }
 
 	return true;
     }

@@ -21,4 +21,9 @@ public class PasswordValidationTest {
 	{
 		Assert.assertEquals(true, obj.isValid("abcdefgh"));
 	}
+	@Test
+	public void checkPasswordWithSpace()
+	{
+		Assert.assertEquals(false, obj.isValid("        "));
+	}
 }
