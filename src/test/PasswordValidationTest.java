@@ -15,4 +15,10 @@ public class PasswordValidationTest {
 	{
 		Assert.assertEquals(false, obj.isValid(""));
 	}
+	//Commit 2
+	@Test
+	public void checkPassword8Length()
+	{
+		Assert.assertEquals(true, obj.isValid("abcdefgh"));
+	}
 }
